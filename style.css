@@ -1,0 +1,189 @@
+/* Resetando margens e preenchimentos para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globais */
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.8)), 
+    url('jornal-voz-ativa-ouro-preto-mg-minas-gerais-op-materia-caso-samarco-sistema-indenizatorio-criado-em-2020-fecha-em-2909-19092023161901.jpg') no-repeat center center/cover;
+  }
+  header{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    margin: 20px;
+    flex-direction: column;
+  }
+  /* Layout Principal */
+  .landing-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 65px;
+  }
+  
+  /* Caixa de texto à esquerda */
+  .text-box {
+    flex: 1;
+    background-color: #008000ad;
+    color: white;
+    padding: 40px 40px;
+    border-radius: 10px;
+    margin-right: 15px;
+    max-width: 40%;
+  }
+  
+  .text-box h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 900;
+  }
+  
+  .text-box p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    font-weight: 500;
+  }
+  
+  /* Caixa de imagem à direita */
+  .image-box {
+    flex: 1;
+    max-width: 60%;
+    text-align: center;
+  }
+  
+  .image-box img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .legend {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .legend p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .legend .red-box, .legend .yellow-box, .legend .green-box {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+  .legenda-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .legend .red-box {
+    background-color: red;
+    border: 2px solid black;
+  }
+  
+  .legend .yellow-box {
+    background-color: yellow;
+    border: 2px solid black;
+  }
+  
+  .legend .green-box {
+    background-color: green;
+    border: 2px solid black;
+  }
+  
+  /* Estilos para os cards e setas */
+  .cards-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+  }
+  
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    width: 65%;
+    justify-content: flex-start;
+  }
+  
+  .card {
+    width: 210px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .card h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Setas de navegação */
+  .arrow-left, .arrow-right {
+    font-size: 2rem;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .arrow-left:hover, .arrow-right:hover {
+    background-color: rgba(0, 255, 0, 0.7);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .landing-page {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .cards-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
